@@ -87,7 +87,7 @@ nav a {
 .products-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-columns: repeat(2, 1fr);
+    /* grid-template-columns: repeat(2, 1fr); */
     gap: 24px;
 }
 
@@ -134,4 +134,54 @@ nav a {
     background-color: #ff6b00;
     color: white;
     cursor: pointer;
+}
+
+/* سایت Responsive بخش */
+/* تبلت و صفحه‌های متوسط */
+@media (max-width: 900px) {
+    .products-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    header {
+        padding: 20px 30px;
+    }
+
+    .products {
+        padding: 40px 30px;
+    }
+}
+
+/* موبایل */
+@media (max-width: 600px) {
+    .products-grid {
+        grid-template-columns: 1fr;
+    }
+
+    header {
+        padding: 20px;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    nav {
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    .products {
+        padding: 30px 20px;
+    }
+
+    .hero {
+        padding: 70px 20px;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
 }
