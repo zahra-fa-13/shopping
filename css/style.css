@@ -136,6 +136,15 @@ nav a {
     cursor: pointer;
 }
 
+/* برای عکس های محصولات */
+.product-image img {
+    width: 100%;
+    height: 100%;
+    /* لاین زیر میاد نسبت به باکسش تنظیم میکنه سایزش رو */
+    object-fit: cover;
+    border-radius: 8px;
+}
+
 /* سایت Responsive بخش */
 /* تبلت و صفحه‌های متوسط */
 @media (max-width: 900px) {
